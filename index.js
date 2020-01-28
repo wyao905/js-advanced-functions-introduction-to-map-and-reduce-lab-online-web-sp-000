@@ -6,3 +6,15 @@ function mapToNegativize(sourceArray) {
   }
   return ret
 }
+
+function mapToNoChange(sourceArray) {
+  return sourceArray
+}
+
+function mapToDouble(sourceArray){
+  let ret = []
+  for(let element of sourceArray) {
+    ret.push(element * (2))
+  }
+  return ret
+}

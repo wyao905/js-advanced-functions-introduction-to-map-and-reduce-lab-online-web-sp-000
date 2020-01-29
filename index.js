@@ -33,3 +33,12 @@ function reduceToTotal(sourceArray, startingPoint = 0) {
   }
   return startingPoint
 }
+
+function reduceToAllTrue(sourceArray) {
+  for(let element of sourceArray) {
+    if(!element) {
+      return false
+    }
+  }
+  return true
+}
